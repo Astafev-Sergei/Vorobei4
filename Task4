@@ -51,6 +51,7 @@ struct BackgroundStyle: ButtonStyle {
                     .frame(width: 70, height: 70)
                     .foregroundStyle(.gray)
                     .opacity(isPressedAnimating ? 0.1 : 0.0)
+                    .offset(x: -4)
             )
             .onChange(of: isPressed) { _, newValue in
                
